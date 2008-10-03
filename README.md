@@ -1,8 +1,8 @@
-# RedmineSimpleAPI 
+# Redmine Simple API plugin
 
 Provides a simple REST API for [Redmine](http://www.redmine.org/)
 
-# Usage
+## Install
 
 1. Add following code to /config/routes.rb
 
@@ -16,17 +16,17 @@ Get Latest wikipage content
 
     GET /simple\_api/get\_wiki?token=blah&project\_id=foo&page=bar
     
-Update wikipage
+Update/Create wikipage
 
     POST /simple\_api/update\_wiki?token=blah&project\_id=foo&page=bar&user=someone&content\_text=something
 
 ## Timelog API
 
-Update issue timelog
+Create issue timelog
 
-    POST /simple_api/timelog_issue?token=foo&issue_id=1&activity_id=2&user=someone&hours=3&comments=blah
+    POST /simple_api/timelog_issue?token=blah&issue_id=1&activity_id=2&user=someone&hours=3&comments=something  
 
-# Author & License
+## Author & License
 
 Author: [Wen-Tien Chang](mailto:ihower@handlino.com)
 Copyright (c) 2008 [Handlino Inc.](http://handlino.com)
