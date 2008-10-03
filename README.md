@@ -20,6 +20,12 @@ Update wikipage
 
     POST /simple\_api/update\_wiki?token=blah&project\_id=foo&page=bar&user=someone&content\_text=something
 
+## Timelog API
+
+Update issue timelog
+
+    POST /simple_api/timelog_issue?token=foo&issue_id=1&activity_id=2&user=someone&hours=3&comments=blah
+
 # Author & License
 
 Author: [Wen-Tien Chang](mailto:ihower@handlino.com)
