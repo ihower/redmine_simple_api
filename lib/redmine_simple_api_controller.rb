@@ -64,6 +64,16 @@ class RedmineSimpleApiController < ActionController::Base
     end
   end
 
+  # issue_id
+  def get_issue
+    @issue = Issue.find(params[:issue_id])
+    
+    respond_to do |format|
+      format.json { render :text => @issue.to_json }
+      format.xml { render :text => @issue.to_xml }
+    end
+  end
+  
   protected
 
   def check_secret_token
